@@ -1,32 +1,28 @@
 #Grails Vagrant box
 
-A basic vagrant box for Grails development.
+A template for setting up a Grails development environment with Vagrant.
 
 #Requirements
 
 * [VirtualBox](https://www.virtualbox.org)
 * [Vagrant](http://vagrantup.com)
 
-Tested on VirtualBox 4.3.12 and Vagrant 1.6.0
+Tested on VirtualBox 5.0.24 and Vagrant 1.8.4
 
 #Installation
 
 ```bash
-$ git clone https://github.com/janmey/grails-vagrant.git
-$ cd grails-vagrant
+$ git clone https://github.com/steveardis/grails-vagrant.git
+$ mv grails-vagrant <your app name>
+$ cd <your app name>
+$ rm -rf .git
 $ vagrant up
-```
-
-#Run demo app
-
-```bash
 $ vagrant ssh
-$ cd /vagrant/helloworld/
-$ grails 
+$ cd /vagrant
+$ grails create-app --inplace <your app name>
+$ grails
 $ run-app
 ```
-
-Open your browser and go to [http://192.168.222.222:8080/helloworld/hello/world](http://192.168.222.222:8080/helloworld/hello/world)
 
 #Credits
 

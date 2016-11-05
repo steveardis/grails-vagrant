@@ -20,11 +20,12 @@ class must-have {
     require => [ Apt::Ppa["ppa:webupd8team/java"], Package["git-core"] ],
   }
 
-  package { ["vim",
+  package { ["emacs",
              "curl",
              "git-core",
              "unzip",
-             "bash"]:
+             "bash",
+             "tmux"]:
     ensure => present,
     require => Exec["apt-get update"],
     before => Apt::Ppa["ppa:webupd8team/java"],
