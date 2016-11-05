@@ -15,6 +15,7 @@ Tested on VirtualBox 5.0.24 and Vagrant 1.8.4
 $ git clone https://github.com/steveardis/grails-vagrant.git <your app name>
 $ cd <your app name>
 $ rm -rf .git
+$ rm README.md
 $ vagrant up
 $ vagrant ssh
 $ cd /vagrant
