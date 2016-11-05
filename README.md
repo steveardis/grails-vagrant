@@ -12,8 +12,7 @@ Tested on VirtualBox 5.0.24 and Vagrant 1.8.4
 #Installation
 
 ```bash
-$ git clone https://github.com/steveardis/grails-vagrant.git
-$ mv grails-vagrant <your app name>
+$ git clone https://github.com/steveardis/grails-vagrant.git <your app name>
 $ cd <your app name>
 $ rm -rf .git
 $ vagrant up
