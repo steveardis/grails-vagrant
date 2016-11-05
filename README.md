@@ -20,6 +20,12 @@ $ vagrant up
 $ vagrant ssh
 $ cd /vagrant
 $ grails create-app --inplace <your app name>
+$ git init
+$ echo .vagrant/ >> .gitignore
+$ git add .
+$ git config --global user.email "<your email address"
+$ git config --global user.name "<your name>"
+$ git commit -m "Initial commit"
 $ grails
 $ run-app
 ```
