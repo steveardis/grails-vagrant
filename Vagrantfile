@@ -10,6 +10,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, guest: 8080, host: 2323
   config.vm.network :private_network, ip: "192.168.222.222"
 
+  config.vm.provision "puppet"
+
   config.vm.provider "virtualbox" do |v|
     v.memory = 2048
     v.cpus = 2
