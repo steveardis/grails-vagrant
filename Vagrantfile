@@ -4,8 +4,9 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "puppetlabs/ubuntu-12.04-32-puppet"
+  config.vm.box = "puppetlabs/ubuntu-16.04-32-puppet"
   #config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.box_version = 1.0.1
 
   config.vm.network :forwarded_port, guest: 8080, host: 8181
   config.vm.network :private_network, ip: "192.168.222.222"
