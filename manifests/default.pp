@@ -23,6 +23,7 @@ class must-have {
   package { ["emacs",
              "curl",
              "git-core",
+             "zip",
              "unzip",
              "bash",
              "tmux"]:
